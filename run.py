@@ -27,12 +27,13 @@ if __name__ == '__main__':
     bert_vocab_path = 'pretrained_bert_models/' + bert_model + '/vocab.txt'
     bert_checkpoint_path = 'pretrained_bert_models/' + bert_model + '/bert_model.ckpt'
 
-    dataset = args.dataset
+    # dataset = args.dataset
+    dataset = "NYT"
     train_path = 'data/' + dataset + '/train_triples.json'
     dev_path = 'data/' + dataset + '/dev_triples.json'
     # test_path = 'data/' + dataset + '/test_split_by_num/test_triples_5.json' # ['1','2','3','4','5']
     # test_path = 'data/' + dataset + '/test_split_by_type/test_triples_seo.json' # ['normal', 'seo', 'epo']
-    # test_path = 'data/' + dataset + '/test_triples.json' # overall test
+    test_path = 'data/' + dataset + '/test_triples.json' # overall test
     rel_dict_path = 'data/' + dataset + '/rel2id.json'
     save_weights_path = 'saved_weights/' + dataset + '/best_model.weights'
     
